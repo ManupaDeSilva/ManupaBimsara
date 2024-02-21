@@ -296,9 +296,10 @@ transition: transform 0.5s;
 }
 
 #education{
-    position: absolute;
+    position: relative;
     width: 100%;
-    height: 100vh;
+   
+
 }
 .education-container h1{
     margin-top: 12%;
@@ -477,13 +478,6 @@ transition: transform 0.5s;
  display: block;
 }
 
-#education{
-    height: 100vh;
-    width: 100%
-    
-
-}
-
 
 .col24 img{
     position: absolute;
@@ -536,8 +530,8 @@ transition: transform 0.5s;
 
 #skills{
     position: absolute;
+    height: 100vh;
     width: 100%;
-    height: 200vh;
 }
 .skills-container h1{
         margin-top: 12%;
@@ -1110,13 +1104,17 @@ form textarea{
 nav .bx{
     display: none;
 }
+#header .container .menu i{
+  display: none;
+}
+
 
 @media only screen and (max-width:600px){
 
 
 /* -----------header page-------------- */
     #header{
-    background-image: url(/images/phone-background.png);
+    background-image: url(./images/phone-background.png);
         
     }
     #header .container{
@@ -1125,10 +1123,22 @@ nav .bx{
     nav .bx{
         display: block;
         font-size: 25px;
-      
+        #header .container .menu i{
+            display: block;
+          }
     }
+    .menu{
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    #header .container .menu i{
+        display: block;  
+    }
+
     nav ul{
-        background: #133c49;
+        background: #2d4a53;
         position: absolute;
         top:0;
         right: -300px;
@@ -1136,7 +1146,7 @@ nav .bx{
         height: 100vh;
         padding-top: 50px; 
         z-index: 2;
-        transition: right 0.5s;
+        transition: left 0.5s;
     }
 
     nav ul li{
@@ -1155,11 +1165,12 @@ nav .bx{
         border: none;
         margin: 0 25px;
         padding: 0px;
-        
     }
 
     .logo{
+        margin-left: 130%;
         width: 125px;
+        height: 21px;
     }
     .header-text {
         margin-top: 20%;
@@ -1356,7 +1367,10 @@ display: grid;
     flex-basis: 100%;
 }
 
-
+.skill2col1 .progcircle,
+.skill2col2 .progcircle{
+    margin-left: 5%;
+}
 .copyright{
    margin-top:100%;
 }
@@ -1404,7 +1418,7 @@ display: grid;
 .project{
     position: absolute;
     width: 60%;
-    background-image: url(/images/GYMANSIUM-small.png);
+    background-image: url(./images/GYMANSIUM-small.png);
 }
 
 .project img{
