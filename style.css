@@ -1141,6 +1141,7 @@ nav .bx{
         background: #2d4a53;
         position: absolute;
         top:0;
+        left: -200px;
         width: 200px;
         height: 100vh;
         padding-top: 50px; 
