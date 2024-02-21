@@ -1141,7 +1141,6 @@ nav .bx{
         background: #2d4a53;
         position: absolute;
         top:0;
-        right: -300px;
         width: 200px;
         height: 100vh;
         padding-top: 50px; 
@@ -1367,10 +1366,6 @@ display: grid;
     flex-basis: 100%;
 }
 
-.skill2col1 .progcircle,
-.skill2col2 .progcircle{
-    margin-left: 5%;
-}
 .copyright{
    margin-top:100%;
 }
