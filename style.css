@@ -1411,10 +1411,12 @@ display: grid;
 .projectsContainer h1{
     font-size:35px;
 }
+
+
 .project{
     position: absolute;
     width: 60%;
-    background-image: url(./images/GYMANSIUM-small.png);
+   
 }
 
 .project img{
@@ -1424,6 +1426,10 @@ display: grid;
     display: block;
     transition: transform 0.5s;
 }
+.project .layer{
+    height: 100%;
+}
+
 
 .layer h3{
     font-size: 15px;
