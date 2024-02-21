@@ -16,8 +16,15 @@
     <!-- Header Section -->
 <div id="header">
     <div class="container">
+        
+        
         <nav>
-            <img src="./images/logo.png" alt="" class="logo">
+           
+            <div class="menu">
+                <i class='bx bx-menu' onclick="openmenu()"></i>
+                <img src="./images/logo.png" alt="" class="logo">
+                
+            </div>
                 <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#About">About</a></li>
@@ -27,7 +34,7 @@
                     <li><a href="#contact">Hire me</a></li>
                 <i class='bx bx-x' onclick="closemenu()"></i>
                 </ul>
-                <i class='bx bx-menu' onclick="openmenu()"></i>
+               
         </nav>
         <div class="header-text">
             <p class="hello">Hello,</p>
@@ -37,7 +44,7 @@
 
        </div>
             <div class="talk">
-                <a href="/images/myCV.pdf" download ><b>Download CV</b></a>
+                <a href="./images/myCV.pdf" download ><b>Download CV</b></a>
                 <a href=""><b>Lern more</b></a>
             </div>
 
@@ -54,7 +61,7 @@
 <div id="About">
     <div class="about-container">
         <h1>About <span class="me"> Me</span></h1>
-        <img src="/images/about.JPG" class="about-img">
+        <img src="./images/about.JPG" class="about-img">
         <span class="circle"></span>
         <h2>D. Manupa Bimsara De Silva</h2>
         <p>I am Dewarahandi Manupa Bimsara De Silva, born on January 20, 1999, hails from the picturesque city of Galle in Sri Lanka. Having laid the academic foundation at Gintota M.V for primary education, I continued to excel in academics at St. Aloysius' College in Galle, where pursued Advanced Level studies in the Mathematics stream.
@@ -107,7 +114,7 @@
             </div>
 
             <div class="col2">
-                <img src="/images/UOP.png" alt="">
+                <img src="./images/UOP.png" alt="">
             </div>
             
             </div>
@@ -154,7 +161,7 @@
                         </div>     
     
                     <div class="col22">
-                        <img src="/images/GMV.png" alt="">    
+                        <img src="./images/GMV.png" alt="">    
                     </div>
                    
                 </div>
@@ -195,7 +202,7 @@
 
            
             <div class="col23">
-                <img src="/images/Aloys.png" alt="">
+                <img src="./images/Aloys.png" alt="">
             </div>
             
            
@@ -243,7 +250,7 @@
         </div>
         
         <div class="col24">
-            <img src="/images/beeline.PNG" alt="">
+            <img src="./images/beeline.PNG" alt="">
         </div>
         
         
@@ -255,19 +262,20 @@
 
         </div>
         <div class="col24">
-            <img src="/images/ousl.jpg" alt="">
+            <img src="./images/ousl.jpg" alt="">
         </div>
 
     </div>
 
 </div> 
+</div>
 <!-- other endup here -->
 
 
 <!---------------------------------- skills --------------------------------------->
 
 
-<section id="Skills">
+<div id="Skills">
 
 <div class="skills-container">
         <h1>Skills</h1>
@@ -466,16 +474,16 @@
 </div> 
 
 
-</section>
+</div>
 
 <!----------------------------------- My project  section --------------------------------->
 
-<section id="projects">
+<div id="projects">
     <div class="projectsContainer">
         <h1>My Projects</h1>
         <div class="project-list">
             <div class="project">
-                <img src="/images/GYMANSIUM.png" >
+                <img src="./images/GYMANSIUM.png" >
                 <div class="layer">
                     <h3>System for University Gymnasium</h3>
                     <p>A web application for University Gymnasium,<br>with Reservations and all the details about Faculty of Physical Education, University of Peradeniya</p>
@@ -491,12 +499,12 @@
        
     </div>
     
-</section>
+</div>
 
 
 <!------------------------ contact me page ----------------------------->
 
-<section id="contact">
+<div id="contact">
 
 <div class="cnt-container">
     <div class="row1">
@@ -510,7 +518,7 @@
                 <a href="https://wa.me/94713641531"><i class='bx bxl-whatsapp-square' ></i></a>
                 <a href="http://www.youtube.com/@manuowinz"><i class='bx bxl-youtube' ></i></a>
             </div>
-            <a class="dwnbtn" href="/images/myCV.pdf" download><b>Download CV</b></a>
+            <a class="dwnbtn" href="./images/myCV.pdf" download><b>Download CV</b></a>
         </div>
 
 
@@ -526,7 +534,7 @@
     </div>
 </div>
 
-</section>
+</div>
 
 <div class="copyright">
    <p>Copyright © Manupa. Made with <i class='bx bxs-heart' ></i> by Manupa Bimsara De Silva </p>
@@ -560,13 +568,16 @@
     }
 </script>
     
+
+
+
 <script>
     var sidemenu = document.getElementById("sidemenu");
     function openmenu(){
-        sidemenu.style.right="0";
+        sidemenu.style.left="0";
     }
     function closemenu(){
-        sidemenu.style.right="-200px";
+        sidemenu.style.left="-200px";
     }
 
 </script>
