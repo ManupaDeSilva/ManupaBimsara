@@ -1,31 +1,3 @@
-const form = document.querySelector('form');
-const Uname = document.getElementById('name');
-const email = document.getElementById('email');
-const message = document.getElementById('message');
-
-function sendEmail(){
-const messagebody = `Name : ${Uname.value}<br> Email : ${email.value}<br> Message: ${message.value}`;
-        Email.send({
-        Host : "smtp.elasticemail.com",
-        Username : "manubimsara000@gmail.com",
-        Password : "0517AB829F92BB04BDDFF288FE5977D8F303",
-        To : 'manubimsara000@gmail.com',
-        From : "manubimsara000@gmail.com",
-        Subject : "Congrats! New Message From CV",
-        Body : messagebody
-    }).then(
-    message => alert("Message sent Succesfully")
-    
-    );
-
-}
-form.addEventListener("submit", (e) =>{
-
-    e.preventDefault();
-    sendEmail();
-
-});
-
 
 //  whatsapp message from form
 
@@ -46,16 +18,15 @@ function sendWA(){
 
 // form to google sheet
 
-// const scriptURL = 'https://script.google.com/macros/s/AKfycby30vqEOTv7gV6ngCjEJHZ-xqlhVcBTbyi4avEc0mdFjHs89scKcdkWH0MQpKYkjRea/exec'
-//     const form = document.forms['submit-to-google-sheet']
+const scriptURL = 'https://script.google.com/macros/s/AKfycbxYj2ovnbvX5sQi0zs1QkH7whM1ub-_7qSNmNBWe2TL7O0P6Xrk7EVF9VinjOxHNdg/exec'
+const form = document.forms['google-form']
   
-//     form.addEventListener('submit', e => {
-//       e.preventDefault()
-//       fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-//         .then(response => console.log('Success!', response))
-//         .catch(error => console.error('Error!', error.message))
-//     })
-
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
 
 
 
