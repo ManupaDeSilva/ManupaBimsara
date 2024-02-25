@@ -1,21 +1,18 @@
 const form = document.querySelector('form');
-const userName = document.getElementById('Name');
+const Uname = document.getElementById('Name');
 const email = document.getElementById('Email');
 const message = document.getElementById('Message');
-const messageBody = "Name : "+ userName
-        + "<br> From : "+ email
-        + "<br> Message : "+ message;
 
 function sendEmail(){
-
+const messagebody = `Name : ${Uname.value}<br> Email : ${email.value}<br> Message: ${message.value}`;
         Email.send({
         Host : "smtp.elasticemail.com",
         Username : "manubimsara000@gmail.com",
         Password : "0517AB829F92BB04BDDFF288FE5977D8F303",
         To : 'manubimsara000@gmail.com',
         From : "manubimsara000@gmail.com",
-        Subject : "This is the subject",
-        Body : messageBody
+        Subject : "Congrats! New Message From CV",
+        Body : messagebody
     }).then(
     message => alert("Message sent Succesfully")
     
