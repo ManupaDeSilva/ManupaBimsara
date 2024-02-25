@@ -1,7 +1,7 @@
 const form = document.querySelector('form');
-const Uname = document.getElementById('Name');
-const email = document.getElementById('Email');
-const message = document.getElementById('Message');
+const Uname = document.getElementById('name');
+const email = document.getElementById('email');
+const message = document.getElementById('message');
 
 function sendEmail(){
 const messagebody = `Name : ${Uname.value}<br> Email : ${email.value}<br> Message: ${message.value}`;
