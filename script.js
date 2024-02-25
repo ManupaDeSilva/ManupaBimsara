@@ -18,15 +18,15 @@ function sendWA(){
 
 // form to google sheet
 
-const scriptURL = 'https://script.google.com/macros/s/AKfycbxYj2ovnbvX5sQi0zs1QkH7whM1ub-_7qSNmNBWe2TL7O0P6Xrk7EVF9VinjOxHNdg/exec'
-const form = document.forms['google-form']
+// const scriptURL = 'https://script.google.com/macros/s/AKfycbxYj2ovnbvX5sQi0zs1QkH7whM1ub-_7qSNmNBWe2TL7O0P6Xrk7EVF9VinjOxHNdg/exec'
+// const form = document.forms['google-form']
   
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => console.log('Success!', response))
-        .catch(error => console.error('Error!', error.message))
-    })
+//     form.addEventListener('submit', e => {
+//       e.preventDefault()
+//       fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+//         .then(response => console.log('Success!', response))
+//         .catch(error => console.error('Error!', error.message))
+//     })
 
 
 
