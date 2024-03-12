@@ -106,7 +106,8 @@ nav ul li a:hover::after{
     margin: 10px 0;
 }
 .icons{
-    position: absolute;
+    margin-left: 55px;
+    position: relative;
     display: inline-block;
     bottom: 15px;
     left: 5.2%;
@@ -1097,6 +1098,12 @@ form textarea{
     color: red;
 }
 
+
+.githubvisit{
+    margin-top:280px;
+    text-align: center; 
+    font-family: "Amaranth", sans-serif;
+}
 
 
 /* ---------css for small screens----------- */
