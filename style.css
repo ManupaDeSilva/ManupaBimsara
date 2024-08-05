@@ -524,14 +524,10 @@ transition: transform 0.5s;
     background-color: transparent;
     color: #1CB2E2;
     cursor: pointer;
-    
 }
-
-
-
 #skills{
     position: absolute;
-    height: 100vh;
+    height: auto;
     width: 100%;
 }
 .skills-container h1{
@@ -542,17 +538,13 @@ transition: transform 0.5s;
         display: flex;
         justify-content: center;
         align-items: center;
-    
 }
-
-
 .progcircle{
 
     width: 160px;
     height: 160px;
     position: relative;
 }
-
 .outer{
 
     height: 160px;
@@ -562,10 +554,6 @@ transition: transform 0.5s;
     box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.5),
                 -6px -6px 10px -1px rgba(0, 0, 0, 0.5)
 }
-
-
-
-
 .inner{
     height: 120px;
     width: 120px;
@@ -581,42 +569,39 @@ transition: transform 0.5s;
 #number{
 font-size: 20px;
 }
-
-
 svg{
     position: absolute;
     top: 0;
     left: 0;
 }
-
 .skillcol1{   
-   
     width: 40%;
     margin-left: 10%;
     margin-top: 5%;
-    box-shadow: 5px 5px 10px  rgba(0, 0, 0, 0.5),
-                -5px -5px 10px  rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 5px 10px  rgba(0, 0, 0, 0.300),
+                -5px -5px 10px  rgba(0, 0, 0, 0.300);
     transition: 0.8s;
+    border-radius: 10px;
 }
 .skillcol1:hover{
     box-shadow: 5px 5px 20px  rgba(45, 156, 151, 0.3),
                 -5px -5px 20px  rgba(45, 156, 151, 0.3);
 }
-
-
 .skillcol1 h2{
     display: flex;
     justify-content: center;
     font-size:30px;
     margin: 20px 0;
     font-family: "Amaranth", sans-serif;
- 
 }
-
 .skillcol1 h3{
     margin: 5px;
-
 }
+.skillrows{
+
+    margin-top: -20px;
+}
+
 
 .bar{
    
@@ -631,18 +616,15 @@ svg{
     margin-left: 10%;
     transition: 0.2s;
 }
-
 h3{
     padding: 1px 10%;
-    font-size: 16px;
+    font-size: 14px;
     color: #ffffff;
 }
-
 #Skills .row1{
     display: flex;
     width: 100%;
     justify-content: space-between;
-
 }
 .skill1{
     display: flex;
@@ -650,6 +632,8 @@ h3{
 }
 .skill1 p{
     margin-right: 10.5%;
+    font-size: 14px;
+    margin-top: 10px;
 }
 .bar:hover{
     box-shadow: 5px 5px 15px rgba(30, 65, 94, 0.7);
@@ -660,7 +644,7 @@ h3{
     background-color: rgb(37, 167, 26);
     border-radius: 10px;
     overflow: hidden;
-    width: 75%;
+    width: 90%;
     box-shadow: 2px 0 15px rgba(0, 0, 0, 0.7);  
 }
 .CSS{
@@ -669,16 +653,26 @@ h3{
     background-color: rgb(37, 167, 26);
     border-radius: 10px;
     overflow: hidden;
-    width: 80%;
+    width: 90%;
     box-shadow: 2px 0 15px rgba(0, 0, 0, 0.7);  
 }
+.JavaScript{
+    display: block;
+    height: 18px;
+    background-color: rgb(37, 167, 26);
+    border-radius: 10px;
+    overflow: hidden;
+    width: 85%;
+    box-shadow: 2px 0 15px rgba(0, 0, 0, 0.7);  
+}
+
 .React{
     display: block;
     height: 18px;
     background-color: rgb(37, 167, 26);
     border-radius: 10px;
     overflow: hidden;
-    width: 70%;
+    width: 85%;
     box-shadow: 2px 0 15px rgba(0, 0, 0, 0.7);  
 }
 
@@ -688,7 +682,7 @@ h3{
     background-color: rgb(37, 167, 26);
     border-radius: 10px;
     overflow: hidden;
-    width: 85%;
+    width: 95%;
     box-shadow: 2px 0 15px rgba(0, 0, 0, 0.7);  
 }
 
@@ -728,9 +722,10 @@ h3{
     width: 35%;
     margin-right: 10%;
     margin-top: 5%;
-    box-shadow: 5px 5px 10px  rgba(0, 0, 0, 0.5),
-                -5px -5px 10px  rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 5px 10px  rgba(0, 0, 0, 0.300),
+                -5px -5px 10px  rgba(0, 0, 0, 0.300);
     transition: 0.8s;
+    border-radius: 10px;
 }
 .skillcol2:hover{
     box-shadow: 5px 5px 20px  rgba(45, 156, 151, 0.3),
@@ -773,7 +768,7 @@ h3{
 }
 @keyframes anima1{
     100%{
-        stroke-dashoffset: 145;
+        stroke-dashoffset: 100;
 
     }
    
@@ -790,7 +785,7 @@ h3{
 }
 @keyframes anima2{
     100%{
-        stroke-dashoffset: 95;
+        stroke-dashoffset: 90;
     }
    
 }
@@ -805,7 +800,7 @@ h3{
 }
 @keyframes anima3{
     100%{
-        stroke-dashoffset: 145;
+        stroke-dashoffset: 80;
     }
    
 }
@@ -823,9 +818,7 @@ h3{
     100%{
         stroke-dashoffset: 118;
     }
-   
 }
-
 .skill1col1 h3,
 .skill1col2 h3,
 .skill2col1 h3,
@@ -833,34 +826,27 @@ h3{
 {
     font-family: monospace;
     text-align: center;
-    margin:10% 0;
-   
+    margin:10% 0;  
 }
-
-
-
-
-
 .otherskills{
-
- 
     margin-left:25% ;
     padding: 10px;
     margin-top: 5%;
     width:50%;
-    box-shadow: 5px 5px 10px  rgba(0, 0, 0, 0.5),
-                -5px -5px 10px  rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 5px 10px  rgba(0, 0, 0, 0.300),
+                -5px -5px 10px  rgba(0, 0, 0, 0.300);
     transition: 0.8s;
-    
+    border-radius: 10px;
 }
 
-
+.otherskills:hover{
+    box-shadow: 5px 5px 20px  rgba(45, 156, 151, 0.3),
+    -5px -5px 20px  rgba(45, 156, 151, 0.3);
+}
 .othercontainer{
-   
     display: flex;
     justify-content: space-between;
 }
-
 .otherskills h3{
     display: flex;
     justify-content: center;
@@ -875,17 +861,13 @@ h3{
 }
 
 .othercontainer{
- 
     flex-wrap: wrap;
     margin: 10% 15%;
-
 }
 .othercol1 ul li,
-.othercol2 ul li{
-   
+.othercol2 ul li{  
     margin-bottom: 15px;
-    width: 100%;
-   
+    width: 100%;  
 }
 .othercol1{
 margin-top: -30px;
@@ -900,121 +882,91 @@ margin-left: 5%;
   
 }
 
-
-
-
 #projects{
-   
     width: 100%;
-    height: 73vh;
+    height: auto;
 }
-.projectsContainer h1{
-    margin-top: 10%;
-    font-size: 60px;
-    width: 100%;
+#projects h1{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    font-size: 50px;
+    margin-bottom: 50px;
     font-family: "Amaranth", sans-serif;
+}
+
+.project-card1,
+.project-card2,
+.project-card3,
+.project-card4,
+.project-card5,
+.project-card6
+{
+    border: 2px solid rgba(192, 192, 194, 0.205);
+    width: 33%;
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.project-card:hover {
+    box-shadow: 5px 5px 20px  rgba(45, 156, 151, 0.3),
+    -5px -5px 20px  rgba(45, 156, 151, 0.3);
+}
+
+.project-photo{
+     width: 100%;
+     border-radius: 10px;
+}
+.projectContainer{
     display: flex;
-    justify-content: center;
-    align-items: center;
-} 
-
-.project-list{
-    margin-top: 70px;
-    display: flex;
-    justify-content: center;
-    
+    margin: 30px;
+    gap: 30px;
 }
-.project{
-    
-    border-radius: 10px;
-    position: absolute;
-    overflow: hidden;
-    width: 30%;
-    height: 257px;
-   
-
-}
-.project img{
-
-    width: 100%;
-    border-radius: 10px;
-    display: block;
-    transition: transform 0.5s;
-    
-}
-
-.layer{
-background-color:#2b2b2bc5;
-width: 100%;
-height: 0;
-border-radius: 10px;
-left: 0;
-bottom: 0;
-overflow: hidden;
-text-align: center;
-transition: height 0.5s;
-position: absolute;
-
-
-}
-.project:hover img{
-    transform: scale(1.1);
-}
-.project:hover .layer{
-  
-    height: 100%;
-    
-}
-.layer h3{
-   margin:5% 0;
-   font-size: 25px;
-   color: #1CB2E2;
-}
-.layer p{
-    margin: 0 15%;
-    margin-bottom: 3%;
-}
-
-.btns{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-.link1{
-    font-size: 15px;
-    border: 2px #1CB2E2 solid;
-    padding: 6px 10px;
-    border-radius: 10px;
-    color: #1CB2E2;
-    text-decoration: none;
-
-}
-
-.link2{
-
-    margin-left: 10%;
-    font-size: 15px;
-    border: 2px #1CB2E2 solid;
-    padding: 6px 10px;
-    border-radius: 10px;
-    color: #1CB2E2;
-    text-decoration: none;
-}
-.link1,
-.link2{
+.project-title{
+    font-family: "Amaranth", sans-serif;
+    margin-bottom: 2px;
     margin-top: 10px;
 }
-
-
-#contact{
-   
-    width: 100%;
-    height: 75vh;
+.project-dispcription{
+    font-size: 13px;
+    font-family: "Laila", serif;
+}
+.tech-used{
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
+.link-buttons{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.links{
+    text-decoration: none;
+    display: flex;
+    font-size: 12px;
+    border-radius: 10px;
+    border: 2px #1cb0e273 solid;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 100px;
+    color: #1cb0e2b6;
+    transition: 0.5s;
+    
+}
+.links:hover{
+    box-shadow: 0px 0px 15px rgba(62, 237, 253, 0.216);
 
 }
+
+#contact{
+    margin-top: 10%;
+    width: 100%;
+    height: auto;
+}
 .cnt-container .row1{
-   
     margin: 0 5%;
     display: flex;
 }
@@ -1202,6 +1154,7 @@ nav .bx{
         display: grid;
         bottom: 65%;
         left: 89.3%;
+        margin-left: 0px;
 
     }
     .icons a{
@@ -1242,7 +1195,7 @@ nav .bx{
 }
 
 .about-container{
-    height: 88vh;
+    height: auto;
 }
 .about-container h1{
     margin-left: 5%;
@@ -1256,7 +1209,6 @@ nav .bx{
     box-shadow: 0px 0px 100px rgba(62, 237, 253, 0.20);
 
 }
-
 
 .about-container h2{
     font-size: 18px;
@@ -1338,7 +1290,15 @@ display: none;
     justify-content: space-between;
 
 }
-
+.skillrows{
+    margin-top: -10px;
+}
+.skillrows h3{
+    font-size: 12px;
+}
+.skillrows p{
+    font-size: 12px;
+}
 .skillcol1{
     width: 315px;
     padding: 8px;
@@ -1374,9 +1334,7 @@ display: grid;
     flex-basis: 100%;
 }
 
-.copyright{
-   margin-top:100%;
-}
+
 
 .skillcol2{
     width: 100%;
@@ -1405,7 +1363,6 @@ display: grid;
     width:80%;   
 }
 
-
 .othercol1{
    margin: 0 0 ;   
 }
@@ -1415,52 +1372,54 @@ display: grid;
         margin: 0 0 ;
 }
 
-.projectsContainer h1{
-    font-size:35px;
+/* ***************  Project page ******************** */
+#projects{
+    height:auto;
 }
-
-
-.project{
-    position: absolute;
-    width: 60%;
-   
-}
-
-.project img{
-    
-    width: 200%;
-    border-radius: 10px;
-    display: block;
-    transition: transform 0.5s;
-}
-.project .layer{
-    height: 100%;
-}
-
-
-.layer h3{
-    font-size: 15px;
-}
-.layer p{
-    font-size: 12px;
-}
-
-.btns{
+.projectContainer{
     display: grid;
+    width: 100%;
+}
+.project-card1,
+.project-card2,
+.project-card3 
+{
+    width: 62.5%;
 }
 
-.link1{
-    font-size: 12px;
-    border: 1px #1CB2E2 solid;
-    padding: 5px 12px;
+.project-card4,
+.project-card5,
+.project-card6
+{
+    width: 83.5%;
 }
 
-.link2{
-    font-size: 12px;
-    border: 1px #1CB2E2 solid;
-    padding: 5px 10px;
-    margin: 15px 0 ;
+
+.project-card2 a{
+    font-size: 8px;
+
 }
+#projects h1{
+    font-size: 35px;
+}
+.project-title{
+font-size: 18px;
+}
+.project-subtitle{
+    font-size: 14px;
+}
+.link-buttons{
+    margin-top: -20px;
+}
+.links{
+    font-size: 10px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* ********* contact ************** */
 .cnt-left h1{
     font-size: 35px;
 }
