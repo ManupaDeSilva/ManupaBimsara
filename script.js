@@ -62,6 +62,12 @@ function opentab(tabname){
 
 var loader = document.getElementById("preloader");
 
-window.addEventListener("load",function(){
-    loader.style.display = "none";
-})
+        // Set a timeout for 5 seconds
+        setTimeout(function() {
+            loader.style.display = "none"; 
+        }, 5000);
+
+        // Hide the loader immediately when the page loads, if it happens before 10 seconds
+        window.addEventListener("load", function() {
+            loader.style.display = "none"; 
+        });
