@@ -569,7 +569,10 @@ transition: transform 0.5s;
 #number{
 font-size: 20px;
 }
-svg{
+.skill1col1 svg,
+.skill1col2 svg,
+.skill2col1 svg,
+.skill2col2 svg{
     position: absolute;
     top: 0;
     left: 0;
