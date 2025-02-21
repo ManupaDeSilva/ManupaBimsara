@@ -139,7 +139,7 @@ transition: transform 0.5s;
     text-decoration: none;
     margin: 40px 0;
     height: 50px;
-    width: 160px;
+    width: 200px;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -719,6 +719,15 @@ h3{
     box-shadow: 2px 0 15px rgba(0, 0, 0, 0.7);  
 }
 
+.Canva{
+    display: block;
+    height: 18px;
+    background-color: rgb(37, 167, 26);
+    border-radius: 10px;
+    overflow: hidden;
+    width: 85%;
+    box-shadow: 2px 0 15px rgba(0, 0, 0, 0.7);  
+}
 
 
 .skillcol2{
@@ -897,6 +906,11 @@ margin-left: 5%;
     margin-bottom: 50px;
     font-family: "Amaranth", sans-serif;
 }
+.project-sub{
+    display: flex;
+    justify-content: center;
+    font-family: "Amaranth", sans-serif;
+}
 
 .project-card1,
 .project-card2,
@@ -954,7 +968,7 @@ margin-left: 5%;
     justify-content: center;
     align-items: center;
     height: 35px;
-    width: 100px;
+    padding: 10px;
     color: #1cb0e2b6;
     transition: 0.5s;
     
@@ -1182,7 +1196,7 @@ nav .bx{
     .dwnbtn{
         font-size: 9px;
         height: 30px;
-        width: 80px;
+        width: 120px;
         border: 1px solid;
     }
 
@@ -1383,13 +1397,16 @@ display: grid;
     display: grid;
     width: 100%;
 }
-.project-card1,
-.project-card2,
-.project-card3 
-{
-    width: 62.5%;
+.project-sub{
+    padding-right:10px;
+    padding-left: 20px;
+    margin-top: -20px;
+    font-size: 14px;
 }
 
+.project-card1,
+.project-card2,
+.project-card3,
 .project-card4,
 .project-card5,
 .project-card6
@@ -1409,7 +1426,7 @@ display: grid;
 font-size: 18px;
 }
 .project-subtitle{
-    font-size: 14px;
+    font-size: 10px;
 }
 .link-buttons{
     margin-top: -20px;
