@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manupa Bimsara — UI Engineer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="style.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+
+<!-- Cursor -->
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+
+<!-- Preloader -->
+<div id="preloader">
+    <div class="pre-name">
+        <span>MANUPA</span>
+    </div>
+    <div class="pre-name" style="color: var(--accent)">
+        <span>BIMSARA</span>
+    </div>
+    <div class="pre-line"></div>
+</div>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+    <a href="#hero" onclick="closeMobileMenu()">Home</a>
+    <a href="#about" onclick="closeMobileMenu()">About</a>
+    <a href="#education" onclick="closeMobileMenu()">Education</a>
+    <a href="#skills" onclick="closeMobileMenu()">Skills</a>
+    <a href="#projects" onclick="closeMobileMenu()">Projects</a>
+    <a href="#contact" onclick="closeMobileMenu()">Contact</a>
+</div>
+
+<!-- Nav -->
+<nav id="mainNav">
+    <a href="#hero" class="nav-logo">M<span>.</span>Bimsara</a>
+    <ul class="nav-links">
+        <li><a href="#about"><span class="navbartag">#</span>About</a></li>
+        <li><a href="#education"><span class="navbartag">#</span>Education</a></li>
+        <li><a href="#skills"><span class="navbartag">#</span>Skills</a></li>
+        <li><a href="#projects"><span class="navbartag">#</span>Projects</a></li>
+        <li><a href="#contact" class="nav-hire">Hire Me</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMobileMenu()">
+        <span></span><span></span><span></span>
+    </div>
+</nav>
+
+<!-- Hero -->
+<section id="hero">
+    <div class="hero-bg-text">DESIGN</div>
+    <div class="hero-content">
+        <div class="hero-tag">UI/UX Designer &amp; Frontend Developer · Sri Lanka</div>
+        <h1 class="hero-title">
+            <span class="outline">MANUPA</span><br>
+            <span class="accent">BIMSARA</span><br>
+            DE SILVA
+        </h1>
+        <p class="hero-desc">Innovative UI/UX Engineer with a B.Sc. in Computer Science, Statistics, and Mathematics and over 3 years of experience shipping 40+ user-centric projects. Expert at bridging creative visual design with functional frontend architecture.</p>
+        <div class="hero-cta">
+            <a href="./images/Manupa_Resume.pdf" download class="btn-primary">Download Resume</a>
+            <a href="#projects" class="btn-ghost">Explore work →</a>
+        </div>
+    </div>
+    <div class="hero-socials">
+        <a target="_blank" href="https://github.com/ManupaDeSilva"><i class='bx bxl-github'></i></a>
+        <a target="_blank" href="https://www.linkedin.com/in/manupa-bimsara-de-silva-0ba0232b5/"><i class='bx bxl-linkedin'></i></a>
+        <a target="_blank" href="https://wa.me/94713641531"><i class='bx bxl-whatsapp'></i></a>
+        <a target="_blank" href="https://m.facebook.com/profile.php/?id=100050306671585"><i class='bx bxl-facebook'></i></a>
+    </div>
+    <div class="scroll-hint">Scroll</div>
+</section>
+
+<!-- About -->
+<section id="about">
+    <div class="section-label reveal">About</div>
+    <div class="about-grid">
+        <div class="about-text">
+            <h2 class="section-title reveal">WHO<br>I AM</h2>
+            <div class="reveal reveal-delay-1">
+                <p>I am Dewarahandi Manupa Bimsara De Silva, born in Galle, Sri Lanka. I pursued Advanced Level studies in the Mathematics stream at St. Aloysius' College before earning admission to the University of Peradeniya.</p>
+                <p>At university, I studied Computer Science, Statistics, and Mathematics — building a rigorous foundation in programming, data analysis, and mathematical modeling that powers everything I design and build.</p>
+            </div>
+            <div class="about-stats reveal reveal-delay-2">
+                <div class="stat">
+                    <div class="stat-num">40+</div>
+                    <div class="stat-label">Projects Designed</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-num">4+</div>
+                    <div class="stat-label">Companies Worked</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-num">5+</div>
+                    <div class="stat-label">Tech Stacks</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-num">3+</div>
+                    <div class="stat-label">Years of Experience</div>
+                </div>
+            </div>
+        </div>
+        <div class="about-visual reveal reveal-delay-2">
+            <div class="about-img-wrap">
+                <img src="./images/about.jpeg" alt="Manupa Bimsara" onerror="this.style.background='var(--surface)';this.style.minHeight='480px'">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Education -->
+<section id="education">
+    <div class="section-label reveal">Education</div>
+    <h2 class="section-title reveal">ACADEMIC<br>JOURNEY</h2>
+    <div class="edu-tabs reveal">
+        <button class="edu-tab active" onclick="switchTab('highstudies')">Higher Studies</button>
+        <button class="edu-tab" onclick="switchTab('als')">A/L — 2018</button>
+        <button class="edu-tab" onclick="switchTab('ols')">O/L — 2014</button>
+        <button class="edu-tab" onclick="switchTab('others')">Certificates</button>
+    </div>
+
+    <div class="edu-panel active" id="highstudies">
+        <div class="edu-info">
+            <div class="edu-sub">Bachelor of Science · University of Peradeniya</div>
+            <h3 class="edu-info-title">Computer Science,<br>Statistics &amp; Mathematics</h3>
+            <p class="edu-desc">The programme emphasised Computer Science with Java, Python, MySQL, HTML, JavaScript, and CSS. In Statistics, I developed data analysis and probability theory skills with R Studio. Mathematics covered Real Analysis, Linear Algebra, and mathematical modelling.</p>
+            <div class="edu-grades">
+                <div class="grade-item"><span>CS</span><span>★</span></div>
+                <div class="grade-item"><span>Stat</span><span>★</span></div>
+                <div class="grade-item"><span>Math</span><span>★</span></div>
+            </div>
+        </div>
+        <div class="edu-badge">
+            <!-- <img src="./images/UOP.png" alt="University of Peradeniya" onerror="this.style.display='none'"> -->
+            <div class="edu-badge-name">University of Peradeniya</div>
+        </div>
+    </div>
+
+    <div class="edu-panel" id="als">
+        <div class="edu-info">
+            <div class="edu-sub">GCE Advanced Level · 2018 · Index: 1830414</div>
+            <h3 class="edu-info-title">Mathematics<br>Stream</h3>
+            <p class="edu-desc">Advanced Level examinations at St. Aloysius' College, Galle — one of the most prestigious schools in the region. Achieved a Z-Score of 1.2463, earning admission to the University of Peradeniya.</p>
+            <div class="edu-grades">
+                <div class="grade-item"><span>Math</span><span>A</span></div>
+                <div class="grade-item"><span>Chem</span><span>B</span></div>
+                <div class="grade-item"><span>Phys</span><span>C</span></div>
+            </div>
+            <p style="margin-top:20px;color:var(--muted);font-size:13px;">Z-Score: <strong style="color:var(--accent)">1.2463</strong></p>
+            <a class="edu-download" href="./images/alResult.pdf" download><i class='bx bx-download'></i> Result Sheet</a>
+        </div>
+        <div class="edu-badge">
+            <!-- <img src="./images/Aloys.png" alt="St. Aloysius College" onerror="this.style.display='none'"> -->
+            <div class="edu-badge-name">St. Aloysius' College, Galle</div>
+        </div>
+    </div>
+
+    <div class="edu-panel" id="ols">
+        <div class="edu-info">
+            <div class="edu-sub">GCE Ordinary Level · 2014 · Index: 41247493</div>
+            <h3 class="edu-info-title">Gintota<br>Maha Vidyalaya</h3>
+            <p class="edu-desc">Ordinary Level examinations at Gintota Maha Vidyalaya, Galle. Achieved outstanding results across all subjects.</p>
+            <div class="edu-grades">
+                <div class="grade-item"><span>Math</span><span>A</span></div>
+                <div class="grade-item"><span>Science</span><span>A</span></div>
+                <div class="grade-item"><span>Sinhala</span><span>A</span></div>
+                <div class="grade-item"><span>History</span><span>A</span></div>
+                <div class="grade-item"><span>Business</span><span>A</span></div>
+                <div class="grade-item"><span>Health</span><span>A</span></div>
+                <div class="grade-item"><span>Arts</span><span>B</span></div>
+                <div class="grade-item"><span>Bud.</span><span>B</span></div>
+                <div class="grade-item"><span>English</span><span>C</span></div>
+            </div>
+            <a class="edu-download" href="./images/olResult.pdf" download><i class='bx bx-download'></i> Result Sheet</a>
+        </div>
+        <div class="edu-badge">
+            <!-- <img src="./images/GMV.png" alt="Gintota Maha Vidyalaya" onerror="this.style.display='none'"> -->
+            <div class="edu-badge-name">Gintota Maha Vidyalaya</div>
+        </div>
+    </div>
+
+    <div class="edu-panel" id="others">
+        <div class="edu-info">
+            <div class="edu-sub">Certificates &amp; Professional Development</div>
+            <h3 class="edu-info-title">English &amp;<br>Computer Literacy</h3>
+            <p class="edu-desc">Certificate in English at The Beeline English Academy, Galle — achieving Grade A across Grammar, Writing, Reading &amp; Comprehension, Listening, and Spoken English under Dr. Priyantha Wickramage.</p>
+            <p class="edu-desc" style="margin-top:16px">Certificate in Computer Literacy at The Open University, Galle — covering MS Office suite (Word, Excel, PowerPoint, Access), internet fundamentals, and computer security.</p>
+            <div class="edu-grades">
+                <div class="grade-item"><span>English</span><span>A</span></div>
+                <div class="grade-item"><span>Comp.</span><span>A</span></div>
+            </div>
+        </div>
+        <div class="edu-badge">
+            <!-- <img src="./images/beeline.PNG" alt="Beeline" onerror="this.style.display='none'"> -->
+            <div class="edu-badge-name">Beeline + Open University</div>
+        </div>
+    </div>
+</section>
+
+<!-- Projects -->
+<section id="projects">
+    <div class="section-label reveal">Work</div>
+    <div class="projects-header">
+    <h2 class="section-title reveal">SELECTED<br>PROJECTS</h2>
+    <p class="projects-intro reveal">40+ user-friendly UI/UX designs and web projects across mobile apps, dashboards, landing pages , games and full-stack systems.</p>
+    </div>
+
+    <div class="project-container">
+        <div class="project-category">
+            <div class="label-wrap">
+            <div class="category-label">Web Designs</div>
+            </div>
+            <div class="category-grid">
+                <!-- P1 -->
+                <article class="project-card reveal">
+                    <div class="project-img"><img src="./images/Eduone.png" alt="EduOne.lk" onerror="this.style.display='none'"></div>
+                    <div class="project-num">01</div>
+                    <h3 class="project-title">EduOne.lk - Landing Page</h3>
+                    <p class="project-desc">Designed a modern, interactive AI learning platform with a focus on user experience and engagement.</p>
+                    <p class="project-company">FonixEdu Pvt Ltd</p>
+                    <div class="project-links">
+                        <a href="https://eduone.lk/" target="_blank" class="project-link">Live ↗</a>
+                        <a href="https://www.figma.com/design/WGszUQx8FXhLLqVak8URXW/EduOne-Public-Grading?node-id=0-1&t=qAGddW8LelzlQEqk-1" target="_blank" class="project-link">Design ↗</a>
+                    </div>
+                </article>
+                <!-- P2 -->
+                <article class="project-card reveal">
+                    <div class="project-img"><img src="./images/eduoneDashboard.png" alt="EduOne.lk" onerror="this.style.display='none'"></div>
+                    <div class="project-num">02</div>
+                    <h3 class="project-title">EduOne - AI Grading Platform and Teacher LMS</h3>
+                    <p class="project-desc">Designed a modern, interactive AI Grading platform and LMS with a focus on teachers, students and parents experience and engagement.</p>
+                    <p class="project-company">FonixEdu Pvt Ltd</p>
+                    <div class="project-links">
+                        <a href="https://teacher.eduone.lk/" target="_blank" class="project-link">Live ↗</a>
+                        <!-- <a href="https://www.figma.com/design/WGszUQx8FXhLLqVak8URXW/EduOne-Public-Grading?node-id=0-1&t=qAGddW8LelzlQEqk-1" target="_blank" class="project-link">Design ↗</a> -->
+                    </div>
+                </article>
+                <!-- P3 -->
+                <article class="project-card reveal">
+                    <div class="project-img"><img src="./images/Walk.png" alt="The Walk Agency" onerror="this.style.display='none'"></div>
+                    <div class="project-num">03</div>
+                    <h3 class="project-title">The Walk Agency Official Website</h3>
+                    <p class="project-desc">Design completed The Walk Agency's official company website using Figma with intractive fashionable design</p>
+                    <p class="project-company">The Walk Agency</p>
+                    <div class="project-links">
+                        <a href="https://thewalkagency.lk/" target="_blank" class="project-link">Live ↗</a>
+                        <a href="https://www.figma.com/design/EyBShwGFsZL9NyrubcSX4J/TheWalkAgency?node-id=0-1&t=xSWpXxRXwsK56YCf-1" target="_blank" class="project-link">Design ↗</a>
+                    </div>
+                </article>
+                <!-- P4 -->
+                <article class="project-card reveal">
+                    <div class="project-img"><img src="./images/ExamhubLanding.png" alt="ExamHub" onerror="this.style.display='none'"></div>
+                    <div class="project-num">04</div>
+                    <h3 class="project-title">ExamHub Official Website</h3>
+                    <p class="project-desc">Designed modern looking, fully interactive website for ExamHub using Figma</p>
+                    <p class="project-company">ExamHub</p>
+                    <div class="project-links">
+                        <a href="https://Examhub.lk/" target="_blank" class="project-link">Live ↗</a>
+                        <a href="https://www.figma.com/design/vTXyGOR2cABNliLqk5niNl/ExamHub-Landing-WEB?node-id=0-1&t=12IcWhcRnwb1GSlZ-1" target="_blank" class="project-link">Design ↗</a>
+                    </div>
+                </article>
+                <!-- P5 -->
+                <article class="project-card reveal">
+                    <div class="project-img"><img src="./images/Codevixe.png" alt="Codevixe" onerror="this.style.display='none'"></div>
+                    <div class="project-num">05</div>
+                    <h3 class="project-title">Codevixe Official Website</h3>
+                    <p class="project-desc">Designed a modern looking, responsive website for Codevixe using Figma.</p>
+                    <p class="project-company">Gmart Online Technologies Pvt Ltd</p>
+                    <div class="project-links">
+                        <a class="project-link">Live Soon</a>
+                        <a href="https://www.figma.com/design/ck9ayU8EcU4OIl84L15opH/Landing-Pages?node-id=1-1986&t=UGV80BvtH1oAQR6u-1" target="_blank" class="project-link">Design ↗</a>
+                    </div>
+                </article>
+                <!-- P6 -->
+                <article class="project-card reveal">
+                    <div class="project-img"><img src="./images/Gmart.png" alt="Gmart" onerror="this.style.display='none'"></div>
+                    <div class="project-num">06</div>
+                    <h3 class="project-title">Gmart Digital marketing company website</h3>
+                    <p class="project-desc">Official Digital marketing company website — animated, interactive design with full Figma design system.</p>
+                    <p class="project-company">Gmart Online Technologies Pvt Ltd</p>
+                    <div class="project-links">
+                        <a class="project-link">Live soon</a>
+                        <a href="https://www.figma.com/design/ck9ayU8EcU4OIl84L15opH/Landing-Pages?node-id=1-1986&t=UGV80BvtH1oAQR6u-1" target="_blank" class="project-link">Design ↗</a>
+                    </div>
+                </article>
+                <!-- P7 -->
+                <article class="project-card reveal">
+                    <div class="project-img"><img src="./images/exampissoweb.png" alt="ExamPisso" onerror="this.style.display='none'"></div>
+                    <div class="project-num">07</div>
+                    <h3 class="project-title">ExamPisso Web Application</h3>
+                    <p class="project-desc">A web application for managing exam processes, class management and student information.</p>
+                    <p class="project-company">Gmart Online Technologies Pvt Ltd</p>
+                    <div class="project-links">
+                        <a class="project-link">Live soon</a>
+                        <a href="" target="_blank" class="project-link">Design ↗</a>
+                    </div>
+                </article>
+                <!-- P8 -->
+                <article class="project-card reveal">
+                    <div class="project-img"><img src="./images/fonixWeb.png" alt="Fonix" onerror="this.style.display='none'"></div>
+                    <div class="project-num">08</div>
+                    <h3 class="project-title">Fonix Software Solutions Website</h3>
+                    <p class="project-desc">Official company website — animated, interactive React application with full Figma design system.</p>
+                    <p class="project-company">Fonix Software Solutions</p>
+                    <div class="project-links">
+                        <a href="https://www.fonixss.com/" target="_blank" class="project-link">Live ↗</a>
+                        <a href="https://www.figma.com/design/CbmXOukj1r7YATkBvMaiH4/Fonix---Company-Web" target="_blank" class="project-link">Design ↗</a>
+                    </div>
+                </article>
+                <!-- P9 -->
+                <article class="project-card reveal reveal-delay-1">
+                    <div class="project-img"><img src="./images/ams.png" alt="AMS" onerror="this.style.display='none'"></div>
+                    <div class="project-num">09</div>
+                    <h3 class="project-title">AI Assignment Management System</h3>
+                    <p class="project-desc">Designed and built (React + Vite) — AI-powered assignment checker with PDF report generation.</p>
+                    <p class="project-company">Fonix Software Solutions</p>
+                    <div class="project-links">
+                        <a href="https://www.figma.com/design/A7Npsf3PWFGdydAK3itxle/AI-Assignment-Management-System" target="_blank" class="project-link">Design ↗</a>
+                        <a href="https://github.com/ManupaDeSilva/AMS-Frontend" target="_blank" class="project-link">GitHub ↗</a>
+                    </div>
+                </article>
+                <!-- P10 -->
+                <article class="project-card reveal reveal-delay-2">
+                    <div class="project-img"><img src="./images/GYMANSIUM.png" alt="Gymnasium" onerror="this.style.display='none'"></div>
+                    <div class="project-num">10</div>
+                    <h3 class="project-title">University Gymnasium System</h3>
+                    <p class="project-desc">Final degree project — MERN stack web app for online reservations and equipment availability at UoP gymnasium.</p>
+                    <p class="project-company">University of Peradeniya</p>
+                    <div class="project-links">
+                        <a href="https://github.com/ManupaDeSilva/Gymnasium-Project.git" target="_blank" class="project-link">GitHub ↗</a>
+                        <a href="https://www.figma.com/design/PkqjbM4ME9jbcxlaP2Zexa/Project-Gymnasium" target="_blank" class="project-link">Design ↗</a>
+                    </div>
+                </article>
+                <!-- P11 -->
+                <article class="project-card reveal">
+                    <div class="project-img"><img src="./images/CoworkingProject.png" alt="Coworking" onerror="this.style.display='none'"></div>
+                    <div class="project-num">11</div>
+                    <h3 class="project-title">Coworking Space Booking System</h3>
+                    <p class="project-desc">React web app integrated with IoT devices for smart room booking at UoP.</p>
+                    <p class="project-company">University of Peradeniya</p>
+                    <div class="project-links">
+                        <a href="https://www.figma.com/design/nBCqIXuVvC44evdSMGCywI/CIMATIC-Labs" target="_blank" class="project-link">Design ↗</a>
+                    </div>
+                </article>
+                <!-- P12 -->
+                <article class="project-card reveal reveal-delay-1">
+                    <div class="project-img"><img src="./images/HotelPage.png" alt="Hotel" onerror="this.style.display='none'"></div>
+                    <div class="project-num">12</div>
+                    <h3 class="project-title">Hotel Landing Page</h3>
+                    <p class="project-desc">Sri Lankan hotel landing page designed in Figma and built with React JS.</p>
+                    <p class="project-company">Personal Project</p>
+                    <div class="project-links">
+                        <a href="https://github.com/ManupaDeSilva/HotelLandingPage-FrontEnd" target="_blank" class="project-link">GitHub ↗</a>
+                        <a href="https://www.figma.com/design/mUw0dQaXxJ9Ltn8r4TZqJv/UI%2FUX-of-Hotel-di-Ceylon" target="_blank" class="project-link">Design ↗</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <div class="project-category">
+            <div class="label-wrap">
+            <div class="category-label">Mobile Designs</div>
+            </div>
+            <div class="category-grid">
+                <!-- P1 -->
+                <article class="project-card reveal">
+                    <div class="project-img"><img src="./images/Korean.png" alt="Korean Master" onerror="this.style.display='none'"></div>
+                    <div class="project-num">01</div>
+                    <h3 class="project-title">Korean Master Mobile App</h3>
+                    <p class="project-desc">Quiz-based Korean language learning app. Designed using Figma for clean, fully interactive UX.</p>
+                    <p class="project-company">Fonix Software Solutions</p>
+                    <div class="project-links">
+                        <a href="https://www.figma.com/design/SjcqjO725vuZZ4WrZhW7sF/Korean-Master" target="_blank" class="project-link">UI/UX Design ↗</a>
+                    </div>
+                </article>
+                 <!-- P2 -->
+                <article class="project-card reveal">
+                    <div class="project-img"><img src="./images/aiGirlfriend.png" alt="AI Girlfriend" onerror="this.style.display='none'"></div>
+                    <div class="project-num">02</div>
+                    <h3 class="project-title">AI Girlfriend Mobile App</h3>
+                    <p class="project-desc">Interactive AI-powered dating app. Designed using Figma for a modern, engaging user experience.</p>
+                    <p class="project-company">Gmart Online Technologies Pvt Ltd</p>
+                    <div class="project-links">
+                        <a href="" target="_blank" class="project-link">UI/UX Design ↗</a>
+                    </div>
+                </article>
+                 <!-- P3 -->
+                <article class="project-card reveal">
+                    <div class="project-img"><img src="./images/aimusic.png" alt="AI Music Generator" onerror="this.style.display='none'"></div>
+                    <div class="project-num">03</div>
+                    <h3 class="project-title">AI Music Generator Mobile App</h3>
+                    <p class="project-desc">Innovative mobile app for creating music with AI. Designed using Figma for a seamless user experience.</p>
+                    <p class="project-company">Gmart Online Technologies Pvt Ltd</p>
+                    <div class="project-links">
+                        <a href="" target="_blank" class="project-link">UI/UX Design ↗</a>
+                    </div>
+                </article>
+                 <!-- P4 -->
+                <article class="project-card reveal">
+                    <div class="project-img"><img src="./images/alco.png" alt="Alco Lanka" onerror="this.style.display='none'"></div>
+                    <div class="project-num">04</div>
+                    <h3 class="project-title">Alco Lanka Mobile App</h3>
+                    <p class="project-desc">Mobile app for stop and limit alcohol consumption. Designed using Figma for a modern, engaging user experience.</p>
+                    <p class="project-company">Gmart Online Technologies Pvt Ltd</p>
+                    <div class="project-links">
+                        <a href="" target="_blank" class="project-link">UI/UX Design ↗</a>
+                    </div>
+                </article>
+                 <!-- P5 -->
+                <article class="project-card reveal">
+                    <div class="project-img"><img src="./images/EduOneMobile.png" alt="EduOne Mobile" onerror="this.style.display='none'"></div>
+                    <div class="project-num">05</div>
+                    <h3 class="project-title">EduOne Mobile App</h3>
+                    <p class="project-desc">Interactive mobile app for teachers and students. Designed using Figma for a modern, engaging user experience.</p>
+                    <p class="project-company">FonixEdu Pvt Ltd</p>
+                    <div class="project-links">
+                        <a href="" target="_blank" class="project-link">UI/UX Design ↗</a>
+                    </div>
+                </article>
+                 <!-- P6 -->
+                <article class="project-card reveal">
+                    <div class="project-img"><img src="./images/exampisso.png" alt="Exam Pisso" onerror="this.style.display='none'"></div>
+                    <div class="project-num">06</div>
+                    <h3 class="project-title">Exam Pisso Mobile App</h3>
+                    <p class="project-desc">Mobile app for Student Education and exam preparation. Designed using Figma for a modern, engaging user experience.</p>
+                    <p class="project-company">Gmart Online Technologies Pvt Ltd</p>
+                    <div class="project-links">
+                        <a href="" target="_blank" class="project-link">UI/UX Design ↗</a>
+                    </div>
+                </article>
+                <!-- P7 -->
+                <article class="project-card reveal reveal-delay-1">
+                    <div class="project-img"><img src="./images/atlas.png" alt="ATLAS" onerror="this.style.display='none'"></div>
+                    <div class="project-num">07</div>
+                    <h3 class="project-title">ATLAS Mobile Education App</h3>
+                    <p class="project-desc">E-learning mobile application for ATLAS — quiz-based and interactive, designed in Figma.</p>
+                    <p class="project-company">Atlas Axillia Co.</p>
+                    <div class="project-links">
+                        <a href="https://www.figma.com/design/xUDCwKKCzBoftsPG7j8K3v/ATLAS-APP" target="_blank" class="project-link">Mobile Design ↗</a>
+                    </div>
+                </article>
+                <!-- P8 -->
+                <article class="project-card reveal reveal-delay-2">
+                    <div class="project-img"><img src="./images/trash2cashsl_cover.jpeg" alt="Trash2Cash" onerror="this.style.display='none'"></div>
+                    <div class="project-num">08</div>
+                    <h3 class="project-title">Trash To Cash Project</h3>
+                    <p class="project-desc">Two Android apps + admin dashboard. Customer &amp; driver apps in Flutter, web app in React.</p>
+                    <p class="project-company">Shield Technologies</p>
+                    <div class="project-links">
+                        <a href="https://github.com/ManupaDeSilva/Trash2Cash" target="_blank" class="project-link">GitHub ↗</a>
+                        <a href="https://www.figma.com/design/5sPoCuXR3AZ50JznDIQ9sJ/T2CCustomer-App" target="_blank" class="project-link">Design ↗</a>
+                    </div>
+                </article>
+                <!-- P9 -->
+                <article class="project-card reveal">
+                    <div class="project-img"><img src="./images/examhub.png" alt="ExamHub" onerror="this.style.display='none'"></div>
+                    <div class="project-num">09</div>
+                    <h3 class="project-title">ExamHub Mobile &amp; Web App</h3>
+                    <p class="project-desc">Gamified quiz-based e-learning. Highly rated on Play Store &amp; App Store.</p>
+                    <p class="project-company">Fonix Software Solutions</p>
+                    <div class="project-links">
+                        <a href="https://examhub.lk/" target="_blank" class="project-link">Live ↗</a>
+                        <a href="https://www.figma.com/design/HayJ3qfHuzd7gHuRXXcJay/ExamHub-Mobile-APP" target="_blank" class="project-link">Design ↗</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <div class="project-category">
+            <div class="label-wrap">
+            <div class="category-label">Game Designs</div>
+            </div>
+            <div class="category-grid">
+                <!-- P1 -->
+                <article class="project-card reveal">
+                    <div class="project-img"><img src="./images/THE RUN GAME.png" alt="The Run Game" onerror="this.style.display='none'"></div>
+                    <div class="project-num">01</div>
+                    <h3 class="project-title">The Run Game UI Design</h3>
+                    <p class="project-desc">Full visual ui design for a mobile unlimited running game.Single player and 3 various modes</p>
+                    <p class="project-company">Gmart Online Technologies Pvt Ltd</p>
+                    <div class="project-links">
+                        <a class="project-link">Live soon</a>
+                        <a href="https://www.figma.com/design/MeFFBWFoDVPdkH26ux76M7/The-RUN-Game?node-id=0-1&t=ZBLhr5RCk9c0von9-1" class="project-link">Design ↗</a>
+                    </div>
+                </article>
+                <!-- P2 -->
+                <article class="project-card reveal">
+                    <div class="project-img"><img src="./images/CARROM ARENA.png" alt="Carrom Arena" onerror="this.style.display='none'"></div>
+                    <div class="project-num">02</div>
+                    <h3 class="project-title">Carrom Arena UI Design</h3>
+                    <p class="project-desc">Full visual ui design for a mobile carrom game. Single player and multiplayer modes</p>
+                    <p class="project-company">Gmart Online Technologies Pvt Ltd</p>
+                    <div class="project-links">
+                        <a class="project-link">Live soon</a>
+                        <a href="https://www.figma.com/design/VokaDtf481QWEnuXK4s2mw/Carrom-Arena?node-id=0-1&t=DcErC8Z6nRa4j15c-1" class="project-link">Design ↗</a>
+                    </div>
+                </article>
+                <!-- P3 -->
+                <article class="project-card reveal">
+                    <div class="project-img"><img src="./images/LUDO ARENA.png" alt="Ludo Game" onerror="this.style.display='none'"></div>
+                    <div class="project-num">03</div>
+                    <h3 class="project-title">Ludo Arena UI Design</h3>
+                    <p class="project-desc">Full visual ui design for a mobile ludo game. Single player and multiplayer modes</p>
+                    <p class="project-company">Gmart Online Technologies Pvt Ltd</p>
+                    <div class="project-links">
+                        <a class="project-link">Live soon</a>
+                        <a href="https://www.figma.com/design/TM3F2r8VJ36y9mZIbbIO2z/Ludo?node-id=0-1&t=UUKCw3zVQJsX5CHJ-1" class="project-link">Design ↗</a>
+                    </div>
+                </article>
+                <!-- P4 -->
+                <article class="project-card reveal">
+                    <div class="project-img"><img src="./images/OMI Game.png" alt="Omi Game" onerror="this.style.display='none'"></div>
+                    <div class="project-num">04</div>
+                    <h3 class="project-title">Omi Game UI Design</h3>
+                    <p class="project-desc">Full visual ui design for a mobile OMI game. Single player and multiplayer modes</p>
+                    <p class="project-company">Gmart Online Technologies Pvt Ltd</p>
+                    <div class="project-links">
+                        <a class="project-link">Live soon</a>
+                        <a href="https://www.figma.com/design/5fly4FAXQxcxSUKnIEMnt9/The-Omi-Game?node-id=0-1&t=s5dad25yvR9VIlIo-1" class="project-link">Design ↗</a>
+                    </div>
+                </article>
+                <!-- P5 -->
+                <article class="project-card reveal">
+                    <div class="project-img"><img src="./images/The bus game.png" alt="The Bus Game" onerror="this.style.display='none'"></div>
+                    <div class="project-num">05</div>
+                    <h3 class="project-title">The Bus Game UI Design</h3>
+                    <p class="project-desc">Full visual ui design for a mobile bus game. Single player with various game modes</p>
+                    <p class="project-company">Gmart Online Technologies Pvt Ltd</p>
+                    <div class="project-links">
+                        <a class="project-link">Live soon</a>
+                        <a href="https://www.figma.com/design/JbgjlBHQbTTaUvbqqvobBS/Bus-Arena?node-id=0-1&t=a2MRqc126gU5jjLa-1" class="project-link">Design ↗</a>
+                    </div>
+                </article>
+                <!-- P6 -->
+                <article class="project-card reveal">
+                    <div class="project-img"><img src="./images/Pool Quest Game.png" alt="Pool Quest Game" onerror="this.style.display='none'"></div>
+                    <div class="project-num">06</div>
+                    <h3 class="project-title">Pool Quest Game UI Design</h3>
+                    <p class="project-desc">Full visual ui design for a mobile pool quest game. Single player and multiplayer modes included</p>
+                    <p class="project-company">Gmart Online Technologies Pvt Ltd</p>
+                    <div class="project-links">
+                        <a class="project-link">Live soon</a>
+                        <a href="https://www.figma.com/design/L3qPRuzzfBRH70VF09pkUD/The-Pool-Quest-Game?node-id=0-1&t=lMAOnFFBFVo9mu3k-1" class="project-link">Design ↗</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Skills -->
+<section id="skills">
+    <div class="section-label reveal">Skills</div>
+    <h2 class="section-title reveal">WHAT<br>I KNOW</h2>
+    <div class="skills-grid">
+        <div>
+            <p class="skill-category-title reveal">Technical Skills</p>
+            <div class="reveal reveal-delay-1">
+                <div class="skill-bar-row">
+                    <div class="skill-bar-header"><span class="skill-name"><i class='bx bxl-figma'></i> Figma</span><span class="skill-pct">95</span></div>
+                    <div class="skill-track"><div class="skill-fill" data-pct="95"></div></div>
+                </div>
+                <div class="skill-bar-row">
+                    <div class="skill-bar-header"><span class="skill-name"><i class='bx bxl-html5'></i> HTML</span><span class="skill-pct">90</span></div>
+                    <div class="skill-track"><div class="skill-fill" data-pct="90"></div></div>
+                </div>
+                <div class="skill-bar-row">
+                    <div class="skill-bar-header"><span class="skill-name"><i class='bx bxl-css3'></i> CSS</span><span class="skill-pct">90</span></div>
+                    <div class="skill-track"><div class="skill-fill" data-pct="90"></div></div>
+                </div>
+                <div class="skill-bar-row">
+                    <div class="skill-bar-header"><span class="skill-name"><i class='bx bxl-javascript'></i> JavaScript</span><span class="skill-pct">85</span></div>
+                    <div class="skill-track"><div class="skill-fill" data-pct="85"></div></div>
+                </div>
+                <div class="skill-bar-row">
+                    <div class="skill-bar-header"><span class="skill-name"><i class='bx bxl-react'></i> React JS</span><span class="skill-pct">85</span></div>
+                    <div class="skill-track"><div class="skill-fill" data-pct="85"></div></div>
+                </div>
+                <div class="skill-bar-row">
+                    <div class="skill-bar-header"><span class="skill-name"><i class='bx bxl-sticker'></i> Canva</span><span class="skill-pct">85</span></div>
+                    <div class="skill-track"><div class="skill-fill" data-pct="85"></div></div>
+                </div>
+                <div class="skill-bar-row">
+                    <div class="skill-bar-header"><span class="skill-name"><i class='bx bxs-data'></i> MySQL</span><span class="skill-pct">75</span></div>
+                    <div class="skill-track"><div class="skill-fill" data-pct="75"></div></div>
+                </div>
+                <div class="skill-bar-row">
+                    <div class="skill-bar-header"><span class="skill-name"><i class='bx bxl-python'></i> Python</span><span class="skill-pct">60</span></div>
+                    <div class="skill-track"><div class="skill-fill" data-pct="60"></div></div>
+                </div>
+                <div class="skill-bar-row">
+                    <div class="skill-bar-header"><span class="skill-name"><i class='bx bxl-adobe'></i> Photoshop</span><span class="skill-pct">55</span></div>
+                    <div class="skill-track"><div class="skill-fill" data-pct="55"></div></div>
+                </div>
+            </div>
+            <div class="other-skills-list reveal reveal-delay-2">
+                <div class="skill-tag"><i class='bx bxl-java'></i> Java</div>
+                <div class="skill-tag"><i class='bx bxl-git'></i> Git</div>
+                <div class="skill-tag"><i class='bx bxl-github'></i> GitHub</div>
+                <div class="skill-tag"><i class='bx bxl-visual-studio'></i> VS Code</div>
+                <div class="skill-tag"><i class='bx bxl-microsoft'></i> MS Office</div>
+                <div class="skill-tag"><i class='bx bx-stats'></i> R Studio</div>
+                <div class="skill-tag"><i class='bx bx-world'></i> GIS</div>
+                <div class="skill-tag"><i class='bx bxl-windows'></i> OS</div>
+                <div class="skill-tag"><i class='bx bxs-network-chart'></i> Networking</div>
+                <div class="skill-tag"><i class='bx bxs-mobile'></i> Mobile Dev</div>
+            </div>
+        </div>
+        <div>
+            <p class="skill-category-title reveal">Professional Skills</p>
+            <div class="prof-grid reveal reveal-delay-1">
+                <div class="prof-item">
+                    <div class="prof-circle-wrap">
+                        <svg width="80" height="80" viewBox="0 0 80 80"><circle cx="40" cy="40" r="36"/><circle class="prog" cx="40" cy="40" r="36" data-pct="95" style="stroke-dasharray:226.2"/></svg>
+                        <div class="prof-num">95%</div>
+                    </div>
+                    <div class="prof-label">Communication</div>
+                </div>
+                <div class="prof-item">
+                    <div class="prof-circle-wrap">
+                        <svg width="80" height="80" viewBox="0 0 80 80"><circle cx="40" cy="40" r="36"/><circle class="prog" cx="40" cy="40" r="36" data-pct="98" style="stroke-dasharray:226.2"/></svg>
+                        <div class="prof-num">98%</div>
+                    </div>
+                    <div class="prof-label">Teamwork</div>
+                </div>
+                <div class="prof-item">
+                    <div class="prof-circle-wrap">
+                        <svg width="80" height="80" viewBox="0 0 80 80"><circle cx="40" cy="40" r="36"/><circle class="prog" cx="40" cy="40" r="36" data-pct="90" style="stroke-dasharray:226.2"/></svg>
+                        <div class="prof-num">90%</div>
+                    </div>
+                    <div class="prof-label">Language Proficiency</div>
+                </div>
+                <div class="prof-item">
+                    <div class="prof-circle-wrap">
+                        <svg width="80" height="80" viewBox="0 0 80 80"><circle cx="40" cy="40" r="36"/><circle class="prog" cx="40" cy="40" r="36" data-pct="95" style="stroke-dasharray:226.2"/></svg>
+                        <div class="prof-num">95%</div>
+                    </div>
+                    <div class="prof-label">Project Management</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Contact -->
+<section id="contact">
+    <div class="section-label reveal">Contact</div>
+    <h2 class="section-title reveal">LET'S<br>TALK</h2>
+    <div class="contact-grid">
+        <div class="contact-info reveal">
+            <h3>Have a project in mind?<br>Let's build it together.</h3>
+            <a href="mailto:manubimsara111@gmail.com" class="contact-detail">
+                <i class='bx bx-mail-send'></i> manubimsara111@gmail.com
+            </a>
+            <a href="tel:+94713641531" class="contact-detail">
+                <i class='bx bxs-phone'></i> +94 71 364 1531
+            </a>
+            <div class="contact-socials">
+                <a target="_blank" href="https://m.facebook.com/profile.php/?id=100050306671585"><i class='bx bxl-facebook'></i></a>
+                <a target="_blank" href="https://www.linkedin.com/in/manupa-bimsara-de-silva-0ba0232b5/"><i class='bx bxl-linkedin'></i></a>
+                <a target="_blank" href="https://wa.me/94713641531"><i class='bx bxl-whatsapp'></i></a>
+                <a target="_blank" href="http://www.youtube.com/@manuowinz"><i class='bx bxl-youtube'></i></a>
+                <a target="_blank" href="https://github.com/ManupaDeSilva"><i class='bx bxl-github'></i></a>
+            </div>
+            <br>
+            <a href="./images/Manupa_Resume.pdf" download class="btn-primary" style="display:inline-block">Download Resume</a>
+        </div>
+        <div class="reveal reveal-delay-1">
+            <form class="contact-form" id="contactForm">
+                <div class="form-field">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-field">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="reply_to" required>
+                </div>
+                <div class="form-field">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required rows="4"></textarea>
+                </div>
+                <button type="button" class="btn-submit" id="submitBtn" onclick="sendMail()">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>© 2026 Manupa Bimsara De Silva · Made with <span class="heart">♥</span> in Sri Lanka</p>
+    <a href="#hero" class="back-top">Back to top ↑</a>
+</footer>
+
+<div class="image-popup" id="imagePopup" onclick="if(event.target === this) closeProjectPopup();">
+    <div class="popup-inner">
+        <button class="popup-close" type="button" onclick="closeProjectPopup()">&times;</button>
+        <div class="popup-content">
+            <img id="popupImage" src="" alt="Project preview">
+            <p class="popup-caption"></p>
+        </div>
+    </div>
+</div>
+
+<script>
+    // EmailJS
+    (function(){ emailjs.init({ publicKey: "d2XN4vog9Nb9ECJw1" }); })();
+
+    function sendMail() {
+        var params = {
+            name: document.getElementById("name").value,
+            reply_to: document.getElementById("email").value,
+            message: document.getElementById("message").value,
+        };
+        emailjs.send("service_iyparqg", "template_opntokv", params)
+            .then(() => {
+                document.getElementById("contactForm").reset();
+                alert("Message sent successfully!");
+            })
+            .catch(err => console.log(err));
+    }
+
+    // Preloader
+    window.addEventListener('load', () => {
+        setTimeout(() => {
+            document.getElementById('preloader').classList.add('hide');
+        }, 1800);
+    });
+
+    // Cursor
+    const cursor = document.getElementById('cursor');
+    const ring = document.getElementById('cursor-ring');
+    let mx = 0, my = 0;
+    document.addEventListener('mousemove', e => {
+        mx = e.clientX; my = e.clientY;
+        cursor.style.left = mx - 6 + 'px';
+        cursor.style.top = my - 6 + 'px';
+        ring.style.left = mx - 20 + 'px';
+        ring.style.top = my - 20 + 'px';
+    });
+    document.querySelectorAll('a, button, .edu-tab, .project-card').forEach(el => {
+        el.addEventListener('mouseenter', () => { cursor.style.transform = 'scale(2)'; ring.style.width='60px'; ring.style.height='60px'; ring.style.marginLeft='-10px'; ring.style.marginTop='-10px'; });
+        el.addEventListener('mouseleave', () => { cursor.style.transform = 'scale(1)'; ring.style.width='40px'; ring.style.height='40px'; ring.style.marginLeft='0'; ring.style.marginTop='0'; });
+    });
+
+    // Nav scroll
+    const nav = document.getElementById('mainNav');
+    window.addEventListener('scroll', () => {
+        nav.classList.toggle('scrolled', window.scrollY > 60);
+    });
+
+    // Education tabs
+    function switchTab(id) {
+        document.querySelectorAll('.edu-tab').forEach(t => t.classList.remove('active'));
+        document.querySelectorAll('.edu-panel').forEach(p => p.classList.remove('active'));
+        event.target.classList.add('active');
+        document.getElementById(id).classList.add('active');
+    }
+
+    // Intersection Observer for reveals
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(e => {
+            if (e.isIntersecting) {
+                e.target.classList.add('visible');
+                // Animate skill bars
+                e.target.querySelectorAll && e.target.querySelectorAll('.skill-fill').forEach(bar => {
+                    bar.style.width = bar.dataset.pct + '%';
+                });
+                // Animate circles
+                e.target.querySelectorAll && e.target.querySelectorAll('.prog').forEach(circle => {
+                    const pct = parseInt(circle.dataset.pct);
+                    const circumference = 226.2;
+                    const offset = circumference - (pct / 100) * circumference;
+                    circle.style.strokeDashoffset = offset;
+                });
+            }
+        });
+    }, { threshold: 0.15 });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    // Also trigger bars/circles when skills section enters viewport
+    const skillObserver = new IntersectionObserver(entries => {
+        entries.forEach(e => {
+            if (e.isIntersecting) {
+                document.querySelectorAll('.skill-fill').forEach(bar => {
+                    bar.style.width = bar.dataset.pct + '%';
+                });
+                document.querySelectorAll('.prog').forEach(circle => {
+                    const pct = parseInt(circle.dataset.pct);
+                    const circumference = 226.2;
+                    const offset = circumference - (pct / 100) * circumference;
+                    circle.style.strokeDashoffset = offset;
+                });
+            }
+        });
+    }, { threshold: 0.2 });
+    const skillsSection = document.getElementById('skills');
+    if (skillsSection) skillObserver.observe(skillsSection);
+
+    // Mobile menu
+    function toggleMobileMenu() {
+        const menu = document.getElementById('mobileMenu');
+        menu.classList.toggle('open');
+    }
+    function closeMobileMenu() { document.getElementById('mobileMenu').classList.remove('open'); }
+
+    // Project image popup
+    function showProjectImage(src, alt) {
+        const popup = document.getElementById('imagePopup');
+        const image = document.getElementById('popupImage');
+        const caption = popup.querySelector('.popup-caption');
+        image.src = src;
+        image.alt = alt || 'Project preview';
+        caption.textContent = alt || '';
+        popup.classList.add('open');
+    }
+    function closeProjectPopup() {
+        const popup = document.getElementById('imagePopup');
+        const image = document.getElementById('popupImage');
+        popup.classList.remove('open');
+        image.src = '';
+    }
+
+    document.querySelectorAll('.project-img img').forEach(img => {
+        img.style.cursor = 'zoom-in';
+        img.addEventListener('click', () => showProjectImage(img.src, img.alt));
+    });
+</script>
+</body>
+</html>
