@@ -930,6 +930,7 @@ padding-right: 10px;
   margin-bottom: 24px;
   background: var(--surface);
   cursor: zoom-in;
+  border-radius: 8px;
 }
 
 .project-img img {
